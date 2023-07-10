@@ -6,6 +6,7 @@ class BookShelf {
     this.listItem = document.createElement('ul');
   }
 
+  // eslint-disable-next-line class-methods-use-this
   Storage() {
     let books = [];
     try {
@@ -49,7 +50,7 @@ class BookShelf {
       this.listItem.appendChild(li);
 
       removeButton.addEventListener('click', () => {
-        this.removeBook(books, book.title, book.author);
+        this.removeBook(book.title, book.author);
         this.renderBooks();
       });
     });
@@ -57,7 +58,8 @@ class BookShelf {
     this.listItem.classList.add('book-list');
   }
 
-  removeBook(books, title, author) {
+  removeBook(title, author) {
+    let books = this.Storage();
     books = books.filter((book) => !(book.title === title && book.author === author));
     localStorage.setItem('books', JSON.stringify(books));
   }
