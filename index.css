@@ -40,6 +40,10 @@ h1 {
   color: black;
 }
 
+#date-time {
+  text-align: end;
+}
+
 .heading {
   text-align: center;
 }

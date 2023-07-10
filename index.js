@@ -1,5 +1,7 @@
 import updateDom from './Modules/updateDom.js';
 import BookShelf from './Modules/BookManager.js';
+import ShowTime from './Modules/ShowTime.js';
+import { DateTime } from './node_modules/luxon/src/luxon.js'
 
 const container = document.querySelector('#bookList');
 const form = document.querySelector('#addForm');
@@ -19,5 +21,7 @@ submit.addEventListener('click', (event) => {
 
 const display = new BookShelf(container);
 display.renderBooks();
-
 updateDom();
+ShowTime(DateTime)
+
+
