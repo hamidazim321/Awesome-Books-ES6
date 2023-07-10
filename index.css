@@ -1,9 +1,8 @@
 * {
   box-sizing: border-box;
-}
-* {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 h1 {
   font-size: 3vw;
 }
@@ -59,6 +58,13 @@ h1 {
   width: 60%;
 }
 
+.book-list li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 5px;
+}
+
 .book-list li:nth-child(odd) {
   background-color: silver;
 }
@@ -67,12 +73,9 @@ h1 {
   background-color: white;
 }
 
-
-.book-list li {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 0 5px;
+footer p {
+  margin: 1% 0;
+  padding: 0;
 }
 
 .book-list li p {
@@ -140,6 +143,7 @@ h1 {
   font-family: sans-serif;
   font-weight: 600;
 }
+
 footer {
   border: solid 4px;
   padding: 0 1%;
@@ -150,11 +154,3 @@ footer {
   width: 98%;
   margin-top: 3%;
 }
-
-footer p {
-  margin: 1% 0;
-  padding: 0;
-}
-
-
-
