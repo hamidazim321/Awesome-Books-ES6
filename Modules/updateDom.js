@@ -18,4 +18,4 @@ function updateDom() {
   });
 }
 
-export default updateDom
+export default updateDom;
